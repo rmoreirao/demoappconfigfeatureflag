@@ -13,7 +13,7 @@
 - Create the Feature Flags from App Configuration:
 
 | Feature Flag|
-| ----------- | ----------- |
+| ----------- |
 | BetaPageDecorator |
 | BetaPageIfStatement |
 | BetaPageTag | 
