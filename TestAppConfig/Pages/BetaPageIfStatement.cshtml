@@ -1,0 +1,12 @@
+﻿@page
+@model TestAppConfig.Pages.BetaPageIfStatementModel
+@{
+    ViewData["Title"] = "Beta Page using If Statemet";
+}
+
+<h1> Page using If Statement to check if Feature flag is enabled  </h1>
+<br/>
+<br />
+<h2>
+    @Model.FeatureFlagEnabledMessage
+</h2>
