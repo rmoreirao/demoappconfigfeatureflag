@@ -21,14 +21,15 @@ namespace TestAppConfig.Pages
 
         public void OnGet()
         {
+            FeatureFlagEnabledMessage = $"Consuming API Version ";
             // Check if the feature flag is enabled.
             if (_featureManager.IsEnabledAsync(FeatureName).Result)
             {
-                FeatureFlagEnabledMessage = $"Feature flag {FeatureName} is enabled.";
+                FeatureFlagEnabledMessage = FeatureFlagEnabledMessage + "V1";
             }
             else
             {
-                FeatureFlagEnabledMessage = $"Feature flag {FeatureName} is disabled.";
+                FeatureFlagEnabledMessage = FeatureFlagEnabledMessage + "V2";
             }   
         }
     }
